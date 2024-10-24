@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/style.css">
+    <title>Goal List</title>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="navbar-container">
+            
+            <ul class="navbar-menu">
+                <li><a href="/">Home</a></li>
+                <li><a href="/goals">My Goals</a></li>
+                <li><a href="/profile">Profile</a></li>
+                <li><a href="/" class="signout">Sign Out</a></li>
+            </ul>
+        </div>
+    </nav>
+    <br>
+    <br>
+      <div class="new-goal-form">
+        <h2>Add a New Goal</h2>
+        <br>
+    <form method="post" action="/add">
+        <label for="title"><strong>Title:</strong>&nbsp;&nbsp;&nbsp;&nbsp;</label>
+         <input type="text" id="title" name="title" required>
+         <label for="start_date">Start Date:</label>
+         <input type="date" id="start_date" name="start_date" required>
+         <label for="end_date">End Date:</label>
+         <input type="date" id="end_date" name="end_date" required>
+         <br>
+         <br>
+         <label for="description">Description:</label>
+         <br>
+         <textarea id="description" name="description" rows="4" cols="50" required></textarea>
+         <br>
+         <br>
+         <!-- <input type="submit" value="Add Goal" class="submit-button"> -->
+         <button type="submit"> Submit</button>
+    </form>
+    </div>
+
+    
+    <div class="goals-conatainer">
+        <h2> My Goals</h2>
+        <% if (goals.length > 0) { %>
+            <% goals.forEach(goal => { %>
+    
+                <div class="goal">
+                    <h3><%= goal.title %></h3>
+                    <p>Description: <%= goal.description %></p>
+                    <p>Start Date: <%= goal.start_date %></p>
+                    <p>Target Date: <%= goal.end_date %></p>
+    
+                <div class="progress">
+                    <div class="progress-bar" style="width: <%= goal.progress %>%;"></div>
+                </div>
+            <p><%= goal.progress %>% completed</p>
+    
+    <form method="post" action="/progress/<%= goal.id %>">
+        <label for="progress">Update Progress:</label>
+            <input type="number" id="progress" name="progress" min="0" max="100" required>
+            <button type="submit">Update</button>
+    </form>
+    
+        <a href="/edit/<%= goal.id %>">Edit</a> -
+        <a href="/delete/<%= goal.id %>">Delete</a>
+    </div>
+            <% }) %>
+            <% } else { %>
+                <p>No goals found. Add a new goal to get started!</p>
+            <% } %>
+    </div>
+    
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    
+    <footer class="footer">
+        <p>Website created by: Becky O. K. Dare © 2024</p>
+    </footer>
+
+    <!-- <div class="footer-band">
+        <footer>
+            <table id="footer-links">
+          
+                <tr>
+                    <td><a href="signup.ejs">Home</a><br></td>
+                </tr>
+                
+                <tr>
+                    <td> <a href="index.ejs">About</a><br></td>
+                </tr>  
+                <tr>
+                    <td> <a href="profile.ejs">Products</a><br></td>
+                </tr>   
+                <tr>
+                    <td><a href="ContactUs">Contact Us</a><br></td>
+                </tr> 
+             
+            </table> 
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            Website created by: Becky O. K. Dare &copy; 2024
+        </footer>
+    </div> -->
+
+</body>
+</html>

@@ -1,0 +1,224 @@
+/* body {
+    margin-top: 60px;
+    font-family: Arial, sans-serif;
+    background-color: rgb(255, 255, 255);
+    padding: 40px;
+  } */
+
+  
+  /* Navbar styling */
+nav ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  background-color: purple;
+}
+
+nav ul li {
+  margin: 0 15px;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  padding: 10px 20px;
+}
+
+nav ul li a:hover {
+  background-color: darkpurple;
+}
+body {
+  margin-top: 60px;
+  font-family: Arial, sans-serif;
+  background-color: rgb(255, 255, 255);
+  padding: 40px;
+}
+
+h1 {
+  text-align: center;
+}
+
+.new-goal-form {
+  max-width: 800px;
+  margin: auto;
+  padding: 20px;
+  background: rgb(255, 255, 255);
+  border-radius: 10px;
+  box-shadow: 5px 5px 5px 5px #999;
+  text-align: center;
+}
+/* Make labels bold and adjust width */
+label {
+  font-weight: bold; /* Makes the label bold */
+  display: inline-block; /* Allows setting a fixed width */
+  width: 100px; /* Adjust this width as needed */
+  margin-right: 10px; /* Optional: Adds space between label and input */
+  text-align: right; /* Aligns the text to the right so it's closer to the input */
+}
+
+.goals-container {
+  display: flex;
+  /* margin: auto; */
+  max-width: 900px;
+  text-align: center;
+}
+
+.goal {
+  max-width: 800px;
+  margin: auto;
+  padding: 20px;
+  background: rgb(255, 255, 255);
+  border-radius: 10px;
+  box-shadow: 5px 5px 5px 5px #999;
+  /* text-align: center;*/
+} 
+
+.new-goal-form form {
+  display: block;
+  width: 100%;
+  margin: auto;
+  padding: 20px;
+}
+
+.goal form {
+  display: block;
+  width: 75%;
+  margin: auto;
+  padding: 20px;
+}
+.new-goal-form button, .goal button {
+  background-color: purple;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.new-goal-form button:hover, .goal button:hover {
+  background-color:rgb(50, 2, 50);
+}
+
+.goal {
+  background-color: rgb(255, 255, 255);
+  padding: 20px;
+  margin-top: 10px ;
+  margin-left: 80px;
+  border-radius: 5px;
+}
+
+.progress {
+  width: 80%;
+  background-color: #f3f3f3;
+  border-radius: 5px;
+  margin: 10px 0;
+}
+
+.progress-bar {
+  height: 20px;
+  background-color: purple;
+  border-radius: 5px;
+}
+
+button, a {
+  background-color: purple;
+  color: white;
+  padding: 10px;
+  text-decoration: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover, a:hover {
+  background-color: darkpurple;
+}
+/* Profile dropdown styling */
+.profile {
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 10px;
+}
+.footer {
+  background-color: purple;
+  color: white;
+  text-align: center;
+  padding: 5px; /* Decrease padding to make the footer band smaller */
+  font-size: 14px; 
+}
+
+/* .footer-band {
+  text-align: center;
+  padding: 5px 0;
+  background-color: purple;
+
+} */
+/* .footer-band {
+  width: 100%;
+  background-color: purple;
+  color: white;
+  text-align: center;
+  padding: 5px 0;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+}
+
+#footer-links {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+#footer-menue td {
+  text-align: center;  Center the text in each cell 
+  padding: 5px;  Optional: Adds some padding around the links 
+} */
+
+/* .dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: white;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {
+    background-color: #ddd;
+}
+
+.dropbtn:hover .dropdown-content {
+    display: block;
+} */
+
+/* Welcome Section */
+/* .welcome {
+    text-align: center;
+    margin-top: 150px;
+}
+
+.welcome button {
+    background-color: purple;
+    color: white;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.welcome button:hover {
+    background-color: darkpurple;
+}  */
