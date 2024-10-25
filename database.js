@@ -5,7 +5,8 @@ const pool = mysql.createPool({
     host: "localhost",
     user: "root",
     password: "Codingbootcamp2024!",
-    database: "goals_setting"
+    database: "goals_setting",
+    port: "3306"
 }).promise();
 
 // User Signup
